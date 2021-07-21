@@ -1,0 +1,143 @@
+!ホワイトリスト
+@@||mstdn.jp^$important,document
+@@||tweetdeck.twitter.com^$important,document
+@@||adguard.com^$important,document
+@@||twitpic.com^$important,document
+@@||www.epicgames.com^$important,document
+@@||rpwebcls.meijo-u.ac.jp^$important,document
+@@||rpportal.meijo-u.ac.jp^$important,document
+@@||docs.google.com^$important,document
+@@||classroom.google.com^$important,document
+@@||www.meijo-u.ac.jp^$important,document
+@@||developer.twitter.com^$important,document
+@@||colab.research.google.com^$important,document
+@@||va.apollon.nta.co.jp^$important,document
+!その他のフィルタ
+www.nicovideo.jp##div.MarqueeContainer
+www.nicovideo.jp##div[class="contentBody videoRcolumn niconews"]
+nicovideo.jp###header-ad
+ja.wikipedia.org###frb-inline
+ja.wikipedia.org###frb-nag
+gigazine.net###yt-ranking
+gigazine.net###LT
+!TL上のプロモ
+twitter.com##:xpath(//article/div/div[contains(@data-testid,"tweet")]/div/div/div/div[not(@lang)]/span[contains(text(),"プロモーション")]/ancestor::div[not(@*)])
+!トレンドプロモ
+twitter.com##:xpath(//div[not(@aria-haspopup)]/div[contains(@data-testid,"trend")][not(./div/span[@aria-hidden])]/*/div[contains(@data-testid,"metadata")]/div[./span[./span[contains(text(),"によるプロモーション")][not(@dir)]]][not(@dir)]/../../../..)
+!TL上のいいね
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])!TL上のフォローのフォローのツイート
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がフォローしています")][not(@dir)]/ancestor::div[not(@*)])
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"さんがフォロー")][not(@dir)]/ancestor::div[not(@*)])
+!その他のツイート
+twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)]/ancestor::div[not(@*)]/following-sibling::div[not(@*)])
+twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)])
+!リストのヘッダ
+twitter.com##:xpath(//div[not(@*)]/div/div/div/div[contains(@style,"margin")]/div[contains(@style,"background-image")]/../../..)
+
+! Twitter -ALL-
+! Twitter プロモーション
+twitter.com##div[class="css-1dbjc4n r-1ila09b r-qklmqi r-1adg3ll r-1ny4l3l"] > div[data-testid="placementTracking"]:xpath(../..)
+twitter.com##div[class="css-1dbjc4n r-1ila09b r-qklmqi r-1adg3ll r-1ny4l3l"] > div > div[data-testid="placementTracking"]:xpath(../../..)
+twitter.com##div[class="css-1dbjc4n r-1ila09b r-qklmqi r-1adg3ll r-1ny4l3l"] > div > div[class="css-1dbjc4n r-1ila09b r-rull8r r-qklmqi r-1wtj0ep r-1j3t67a r-1w50u8q"]:xpath(../../..)
+! Twitter おすすめユーザー サイド
+twitter.com##aside[aria-label="おすすめユーザー"] > div[class*="css-1dbjc4n"][class*="r-rull8r"][class*="r-qklmqi"][class*="r-1wtj0ep"][class*="r-ymttw5"][class*="r-1f1sjgu"]:xpath(../..)
+! Twitter いまどうしてる？ - What’s happening
+twitter.com##div[aria-label*="トレンド"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
+twitter.com##div[aria-label*="話題を検索"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
+! おすすめトピック
+twitter.com##div[aria-label="タイムライン: "]:xpath(..) > h1[class="css-4rbku5 css-901oao r-4iw3lz r-1xk2f4g r-109y4c4 r-1udh08x r-wwvuq4 r-u8s1d r-92ng3h"]:xpath(../../..)
+! Twitter -タイムライン-
+! Twitter おすすめユーザー
+twitter.com##div[aria-label*="タイムライン: ホームタイムライン"] > div > div > div > div > h2 > div > span:has-text(おすすめユーザー):xpath(../../../..) > div[class="css-1dbjc4n r-1wtj0ep r-ymttw5 r-1f1sjgu"]:xpath(../..)
+twitter.com##div[aria-label*="タイムライン: ホームタイムライン"] > div > div > div > div[data-testid="UserCell"]:xpath(../..)
+twitter.com##div[aria-label*="タイムライン: ホームタイムライン"] > div > div > [class*="css-1dbjc4n"][class*="r-qklmqi"][class*="r-1adg3ll"][class*="r-1ny4l3l"] > a[href^="/i/connect_people?user_id="]:xpath(../..)
+twitter.com##div[aria-label*="タイムライン: ホームタイムライン"] > div > div > div > div[class*="css-1dbjc4n"][class*="r-rull8r"][class*="r-qklmqi"][class*="r-tbmifm"]:xpath(../..)
+! Twitter トピックをフォロー
+twitter.com##div[aria-label*="タイムライン: ホームタイムライン"] > div > div > div > div > h2 > div > span:has-text(新しいリストを見つける):xpath(../../../../..)
+twitter.com##div[aria-label*="タイムライン: ホームタイムライン"] > div > div > div > a[href^="/i/lists/"]:xpath(../..)
+twitter.com##div[aria-label*="タイムライン: ホームタイムライン"] > div > div > div > div > article > div > div > div > div > div > div > div > div > div[class="css-1dbjc4n r-obd0qt r-1hwvwag r-18kxxzh r-1777fci r-15zivkp r-1b7u577"]:xpath(../../../../../../../../../../../..)
+! Twitter -ツイート-
+twitter.com##div[aria-label*="さんのツイート"] > div > div > div > div > h2 > div > span:has-text(おすすめユーザー):xpath(../../../..) > div[class="css-1dbjc4n r-1wtj0ep r-ymttw5 r-1f1sjgu"]:xpath(../..)
+twitter.com##div[aria-label*="さんのツイート"] > div > div > div > div[data-testid="UserCell"]:xpath(../..)
+twitter.com##div[aria-label*="さんのツイート"] > div > div > [class*="css-1dbjc4n"][class*="r-qklmqi"][class*="r-1adg3ll"][class*="r-1ny4l3l"] > a[href^="/i/connect_people?user_id="]:xpath(../..)
+twitter.com##div[aria-label*="さんのツイート"] > div > div > div > div[class*="css-1dbjc4n"][class*="r-rull8r"][class*="r-qklmqi"][class*="r-tbmifm"]:xpath(../..)
+! Twitter タイムライン: Carousel
+twitter.com##div[aria-label*="さんのツイート"] > div > div > div > section > div[aria-label*="Carousel"]:xpath(../../..)
+! Twitter おすすめトピック
+twitter.com##div[aria-label*="さんのツイート"] > div > div > div > div > h2 > div > span:has-text(おすすめトピック):xpath(../../../..) > div[class="css-1dbjc4n r-1wtj0ep r-ymttw5 r-1f1sjgu"]:xpath(../..)
+twitter.com##div[aria-label*="さんのツイート"] > div > div > [class*="css-1dbjc4n"][class*="r-qklmqi"][class*="r-1adg3ll"][class*="r-1ny4l3l"] > a[href^="/i/topics/picker/home"]:xpath(../..)
+twitter.com##div[aria-label*="さんのツイート"] > div > div > div[class="css-1dbjc4n r-1ila09b r-qklmqi r-1adg3ll r-1ny4l3l"] > a[href^="/i/flow/topics_selector"]:xpath(../..)
+! Twitter -検索-
+! Twitter おすすめユーザー - People (Search)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > div > h2 > div > span:has-text(アカウント):xpath(../../../..) > div[class="css-1dbjc4n r-1wtj0ep r-ymttw5 r-1f1sjgu"]:xpath(../..)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > div > article[class="css-1dbjc4n r-1loqt21 r-18u37iz r-1ny4l3l r-1udh08x r-1qhn6m8 r-i023vh r-o7ynqc r-6416eg"]:xpath(../../../../../..) > div > div > div > div > div[data-testid="UserCell"]:xpath(../..)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1loqt21 r-1ny4l3l r-ymttw5 r-1yzf0co r-o7ynqc r-6416eg"][href*="&f=user"]:xpath(../..)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > div[class*="css-1dbjc4n"][class*="r-rull8r"][class*="r-qklmqi"][class*="r-tbmifm"]:xpath(../..)
+! Twitter 話題のニュース - News (Search)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > div > h2 > div > span:has-text(話題のニュース):xpath(../../../../..)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > div[class="css-1dbjc4n r-1loqt21 r-1ny4l3l r-ymttw5 r-1f1sjgu r-o7ynqc r-6416eg"]:xpath(../..)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > div > h2 > div > span:has-text(関連トピック):xpath(../../../../..)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > div > a[href^="/i/topics/"]:xpath(../../..) > div[class="css-1dbjc4n r-1ila09b r-qklmqi r-1adg3ll r-1ny4l3l"]:xpath(..)
+twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > a > div > div > div[id*="topic-follow-button"]:xpath(../../../../..)
+
+twitter.com#?#div.css-1dbjc4n.r-1loqt21.r-6koalj.r-1j3t67a.r-1w50u8q.r-o7ynqc.r-6416eg:-abp-has(div > div > div > div > span:-abp-contains(政治))
+
+!Twitterトレンド
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(おすすめユーザー)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(おすすめユーザー)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(ミモレ)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(ミモレ)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(Buzz)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(Buzz)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(ハフポスト)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(ハフポスト)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(文春)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(文春)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div >div:has-text(時事)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div >div:has-text(時事)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(東洋経済)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(東洋経済)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div >div:has-text(朝日新聞デジタル)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div >div:has-text(朝日新聞デジタル)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(FNNプライム)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(FNNプライム)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(共同通信)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(共同通信)
+!トレンドカテゴリ
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(オリンピック)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(オリンピック)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(政治)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(政治)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(旅行)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(旅行)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(ニュース)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(ニュース)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(スポーツ)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(スポーツ)
+!Youtubeチャンネル
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCxNpaIU2WbQKgl-UwZ-ML3A"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCGGi7bW6Ikk_C4cxn3h16MQ"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCxm3RjoZHKNbvpiP5RW6Wlg"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCnQ5AV_pKSN1zGzB4iG2ryQ"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCCEbdgr-x0t7V42WjT8m3AA"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UC9WJo5ZJVXMZiA5XV2jLx5Q"])
+
+! 2020/5/26 https://twitter.com
+twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-t23y2h.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
+! 2020-09-30 http://gadgetr.seesaa.net
+gadgetr.seesaa.net###ia2a
+! 2021-04-07 https://www.quora.com
+www.quora.com##.qu-zIndex--modal_desktop.qu-overflow--hidden.qu-justifyContent--center.qu-alignItems--center.q-flex
+! 2021-04-11 https://live.nicovideo.jp
+live.nicovideo.jp##.___banner-panel___1WjFA.___ga-ns-banner-panel___3bb4p.___banner-panel___XbLIX
+live.nicovideo.jp##.___banner-ad___3I1Ik
+! 2021-04-22 https://pc-plaza.com
+pc-plaza.com##.jconfirm-cell
+pc-plaza.com##.jconfirm-scrollpane
+! 2021-04-25 https://gigazine.net
+gigazine.net##.fc-dialog-container
+! 2021-05-23 https://www.filehorse.com
+www.filehorse.com##.abp-modal.mfp-hide
+twitter.com/##.r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1loqt21.css-1dbjc4n > .r-18u37iz.css-1dbjc4n
+twitter.com/##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1ny4l3l.r-1loqt21.css-1dbjc4n > .r-1udh08x.r-1adg3ll.css-1dbjc4n
