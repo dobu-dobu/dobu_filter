@@ -20,20 +20,6 @@ ja.wikipedia.org###frb-inline
 ja.wikipedia.org###frb-nag
 gigazine.net###yt-ranking
 gigazine.net###LT
-!TL上のプロモ
-twitter.com##:xpath(//article/div/div[contains(@data-testid,"tweet")]/div/div/div/div[not(@lang)]/span[contains(text(),"プロモーション")]/ancestor::div[not(@*)])
-!トレンドプロモ
-twitter.com##:xpath(//div[not(@aria-haspopup)]/div[contains(@data-testid,"trend")][not(./div/span[@aria-hidden])]/*/div[contains(@data-testid,"metadata")]/div[./span[./span[contains(text(),"によるプロモーション")][not(@dir)]]][not(@dir)]/../../../..)
-!TL上のいいね
-twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])
-twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])!TL上のフォローのフォローのツイート
-twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がフォローしています")][not(@dir)]/ancestor::div[not(@*)])
-twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"さんがフォロー")][not(@dir)]/ancestor::div[not(@*)])
-!その他のツイート
-twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)]/ancestor::div[not(@*)]/following-sibling::div[not(@*)])
-twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)])
-!リストのヘッダ
-twitter.com##:xpath(//div[not(@*)]/div/div/div/div[contains(@style,"margin")]/div[contains(@style,"background-image")]/../../..)
 
 ! Twitter -ALL-
 ! Twitter プロモーション
@@ -83,6 +69,61 @@ twitter.com##div[aria-label*="タイムラインを検索"] > div > div > div > 
 
 twitter.com#?#div.css-1dbjc4n.r-1loqt21.r-6koalj.r-1j3t67a.r-1w50u8q.r-o7ynqc.r-6416eg:-abp-has(div > div > div > div > span:-abp-contains(政治))
 
+!TL上のプロモ
+twitter.com##:xpath(//article/div/div[contains(@data-testid,"tweet")]/div/div/div/div[not(@lang)]/span[contains(text(),"プロモーション")]/ancestor::div[not(@*)])
+!トレンドプロモ
+twitter.com##:xpath(//div[not(@aria-haspopup)]/div[contains(@data-testid,"trend")][not(./div/span[@aria-hidden])]/*/div[contains(@data-testid,"metadata")]/div[./span[./span[contains(text(),"によるプロモーション")][not(@dir)]]][not(@dir)]/../../../..)
+!TL上のいいね
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])!TL上のフォローのフォローのツイート
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がフォローしています")][not(@dir)]/ancestor::div[not(@*)])
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"さんがフォロー")][not(@dir)]/ancestor::div[not(@*)])
+!その他のツイート
+twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)]/ancestor::div[not(@*)]/following-sibling::div[not(@*)])
+twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)])
+!リストのヘッダ
+twitter.com##:xpath(//div[not(@*)]/div/div/div/div[contains(@style,"margin")]/div[contains(@style,"background-image")]/../../..)
+
+! ==================================================
+! https://twitter.com を快適にします @ 2021-06-21
+! 使い方: これを ublock の Myフィルターに追加する
+! 不具合: 下のtodoを見てください
+! ==================================================
+
+! === 汎用的に使えるやつ ここから ===
+! トレンドを非表示
+twitter.com##[aria-label="タイムライン: トレンド"]
+
+! おすすめユーザーを非表示
+twitter.com##[aria-label="おすすめユーザー"]
+
+! 右のおすすめトピックを非表示
+twitter.com##[aria-label="タイムライン: "]
+
+! タイムラインのおすすめトピックを非表示
+twitter.com##[aria-label="タイムライン: Carousel"]
+
+! 検索画面のトレンドとニュースを非表示
+!twitter.com##[data-testid="eventHero"]
+!twitter.com##[aria-label="タイムライン: 話題を検索"]
+! === 汎用的に使えるやつ ここまで ===
+
+! === 細かいやつ ここから ===
+! single timeline上のおすすめトピックを非表示
+twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-1dbjc4n
+
+! single timeline上の「さらに表示」と「その他のトピック」を非表示
+twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1yzf0co.r-ymttw5.r-1ny4l3l.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
+
+! single timeline上の「おすすめユーザー」の実際のユーザーを非表示
+twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
+
+! list の 上の方のとんでもなく巨大なバナーを非表示
+twitter.com##.r-1phboty.r-qklmqi.r-j7yic.css-1dbjc4n
+! === 細かいやつ ここまで ===
+
+! todo: たまにtimeline上に出てくる、「デスクトップ通知を有効」みたいなやつ。なかなか出てこないので非表示にできず
+
 !Twitterトレンド
 twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(おすすめユーザー)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(おすすめユーザー)
@@ -105,6 +146,8 @@ twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text
 twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(共同通信)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(共同通信)
 !トレンドカテゴリ
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(五輪)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(五輪)
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(オリンピック)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(オリンピック)
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(政治)
@@ -115,6 +158,7 @@ twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:h
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(ニュース)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(スポーツ)
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(スポーツ)
+
 !Youtubeチャンネル
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCxNpaIU2WbQKgl-UwZ-ML3A"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCGGi7bW6Ikk_C4cxn3h16MQ"])
