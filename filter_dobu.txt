@@ -146,6 +146,8 @@ twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text
 twitter.com##div[aria-label="タイムライン: トレンド"] > div:has-text(共同通信)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(共同通信)
 !トレンドカテゴリ
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(@)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(@)
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(五輪)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(五輪)
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(オリンピック)
