@@ -174,6 +174,10 @@ youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCfDsXNyY1iNjUgftIOhg7BA"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UC3HQShi8AQfNFSl5vuM6qYg"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCAaThwhgEMfisl0GMsd4SIg"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UC1CTpswOmqaxN5NXKVD1dUg"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UC-kF1uMFhIfvw6seHqDGwkg"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCIU_1WDzifvGu16qzFcKAEA"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCubvrNZIuYcL15GU39rw9Lw"])
 
 ! 2020/5/26 https://twitter.com
 twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-t23y2h.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
