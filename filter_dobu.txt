@@ -160,6 +160,10 @@ twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:h
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(ニュース)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(スポーツ)
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(スポーツ)
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(野球)
+twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(野球)
+
+
 
 !Youtubeチャンネル
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCxNpaIU2WbQKgl-UwZ-ML3A"])
