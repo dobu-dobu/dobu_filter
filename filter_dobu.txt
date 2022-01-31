@@ -190,6 +190,7 @@ youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCC9eo_cxdgW2_z2QLbowt_Q"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCko8fM0dESSekdBBYl7maEg"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCMcPUQ32zjHF_pkfn_24LkQ"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UC6kSLiIgAcbXNSxf0JHjy5g"])
 
 
 ! 2020/5/26 https://twitter.com
