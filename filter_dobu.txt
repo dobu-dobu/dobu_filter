@@ -196,6 +196,10 @@ youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UC-gVzqx-OqiA7YMx4yRkY8g"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCybWMPsL91TxTf5aP0x5IEA"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UC8JeHleBTjWmNVrG4iSPFaw"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCbjxbFigxYj56y9o9HnR0wA"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCNlH8-H5T9r03kWjG6sKv_w"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCt8NMXtI4uPBrBFWvzc7LcQ"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCxLutrhFV9AtV3PYz4vxpeQ"])
 
 ! 2020/5/26 https://twitter.com
 twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-t23y2h.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
