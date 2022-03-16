@@ -216,6 +216,13 @@ youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCNEaSTuIJEgOgBFLviwUohQ"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="TechyKiran"])
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="Surlofia"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCGeTXNdOY7StvUTB0qcnsQQ"]) 
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="AdamLoboTV"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCCWLJImQvwHTXTe5Z_88zmw"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="tiremh"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="kajimack"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="SpidersWebtv"])
+youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="qukeru"])
 
 ! 2020/5/26 https://twitter.com
 twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-t23y2h.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
