@@ -124,6 +124,10 @@ twitter.com##.r-1phboty.r-qklmqi.r-j7yic.css-1dbjc4n
 
 ! todo: たまにtimeline上に出てくる、「デスクトップ通知を有効」みたいなやつ。なかなか出てこないので非表示にできず
 
+!Googleの「他の人はこちらも検索」
+www.google.com##[id^="eob_"]
+google.co.jp##div[id^="eob_"]
+
 !Twitterトレンド
 twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(おすすめユーザー)
 twitter.com##div[aria-label="タイムライン: 話題を検索"] >div:has-text(おすすめユーザー)
@@ -163,7 +167,8 @@ twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-
 twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:has-text(野球)
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(野球)
 
-
+!Youtube「あなたへのおすすめ」
+youtube.com##div[id="metadata-line"]:has(span[class="style-scope ytd-video-meta-block"]:has-text(あなたへのおすすめ)):upward(8)
 
 !Youtubeチャンネル
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCxNpaIU2WbQKgl-UwZ-ML3A"])
