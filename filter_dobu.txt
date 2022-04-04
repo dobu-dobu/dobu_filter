@@ -168,7 +168,10 @@ twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div:h
 twitter.com##div[aria-label="タイムライン: トレンド"] > div > div:has-text(野球)
 
 !Youtube「あなたへのおすすめ」
-youtube.com##div[id="metadata-line"]:has(span[class="style-scope ytd-video-meta-block"]:has-text(あなたへのおすすめ)):upward(8)
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/あなたへのおすすめ/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/他の人はこちらも視聴しています/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/前に再生した動画/i))
+www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has-text(他の人はこちらも検索)
 
 !Youtubeチャンネル
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="UCxNpaIU2WbQKgl-UwZ-ML3A"])
