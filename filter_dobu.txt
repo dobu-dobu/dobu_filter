@@ -29,7 +29,7 @@ twitter.com##div[class="css-1dbjc4n r-1ila09b r-qklmqi r-1adg3ll r-1ny4l3l"] > d
 ! Twitter おすすめユーザー サイド
 twitter.com##aside[aria-label="おすすめユーザー"] > div[class*="css-1dbjc4n"][class*="r-rull8r"][class*="r-qklmqi"][class*="r-1wtj0ep"][class*="r-ymttw5"][class*="r-1f1sjgu"]:xpath(../..)
 ! Twitter いまどうしてる？ - What’s happening
-twitter.com##div[aria-label*="トレンド"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
+!twitter.com##div[aria-label*="トレンド"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
 !twitter.com##div[aria-label*="話題を検索"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
 ! おすすめトピック
 twitter.com##div[aria-label="タイムライン: "]:xpath(..) > h1[class="css-4rbku5 css-901oao r-4iw3lz r-1xk2f4g r-109y4c4 r-1udh08x r-wwvuq4 r-u8s1d r-92ng3h"]:xpath(../../..)
@@ -75,7 +75,8 @@ twitter.com##:xpath(//article/div/div[contains(@data-testid,"tweet")]/div/div/di
 twitter.com##:xpath(//div[not(@aria-haspopup)]/div[contains(@data-testid,"trend")][not(./div/span[@aria-hidden])]/*/div[contains(@data-testid,"metadata")]/div[./span[./span[contains(text(),"によるプロモーション")][not(@dir)]]][not(@dir)]/../../../..)
 !TL上のいいね
 twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])
-twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])!TL上のフォローのフォローのツイート
+twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がいいねしました")][not(@dir)]/ancestor::div[not(@*)])
+!TL上のフォローのフォローのツイート
 twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/timeline")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"がフォローしています")][not(@dir)]/ancestor::div[not(@*)])
 twitter.com##:xpath(//article/div/div/div/div/div/div/a[contains(@href,"/i/user/")]/span/span[contains(@dir,"ltr")]/span[contains(text(),"さんがフォロー")][not(@dir)]/ancestor::div[not(@*)])
 !その他のツイート
@@ -95,28 +96,28 @@ twitter.com##:xpath(//div[not(@*)]/div/div/div/div[contains(@style,"margin")]/di
 twitter.com##[aria-label="タイムライン: トレンド"]
 
 ! おすすめユーザーを非表示
-!twitter.com##[aria-label="おすすめユーザー"]
+twitter.com##[aria-label="おすすめユーザー"]
 
 ! 右のおすすめトピックを非表示
-!twitter.com##[aria-label="タイムライン: "]
+twitter.com##[aria-label="タイムライン: "]
 
 ! タイムラインのおすすめトピックを非表示
-!twitter.com##[aria-label="タイムライン: Carousel"]
+twitter.com##[aria-label="タイムライン: Carousel"]
 
 ! 検索画面のトレンドとニュースを非表示
-!twitter.com##[data-testid="eventHero"]
-!twitter.com##[aria-label="タイムライン: 話題を検索"]
+twitter.com##[data-testid="eventHero"]
+twitter.com##[aria-label="タイムライン: 話題を検索"]
 ! === 汎用的に使えるやつ ここまで ===
 
 ! === 細かいやつ ここから ===
 ! single timeline上のおすすめトピックを非表示
-!twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-dbjc4n > .r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-1dbjc4n
+twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-1dbjc4n
 
 ! single timeline上の「さらに表示」と「その他のトピック」を非表示
-!twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1yzf0co.r-ymttw5.r-1ny4l3l.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
+twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1yzf0co.r-ymttw5.r-1ny4l3l.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
 
 ! single timeline上の「おすすめユーザー」の実際のユーザーを非表示
-!twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
+twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
 
 ! list の 上の方のとんでもなく巨大なバナーを非表示
 twitter.com##.r-1phboty.r-qklmqi.r-j7yic.css-1dbjc4n
