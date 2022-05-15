@@ -95,13 +95,13 @@ twitter.com##:xpath(//div[not(@*)]/div/div/div/div[contains(@style,"margin")]/di
 twitter.com##[aria-label="タイムライン: トレンド"]
 
 ! おすすめユーザーを非表示
-twitter.com##[aria-label="おすすめユーザー"]
+!twitter.com##[aria-label="おすすめユーザー"]
 
 ! 右のおすすめトピックを非表示
-twitter.com##[aria-label="タイムライン: "]
+!twitter.com##[aria-label="タイムライン: "]
 
 ! タイムラインのおすすめトピックを非表示
-twitter.com##[aria-label="タイムライン: Carousel"]
+!twitter.com##[aria-label="タイムライン: Carousel"]
 
 ! 検索画面のトレンドとニュースを非表示
 !twitter.com##[data-testid="eventHero"]
@@ -110,13 +110,13 @@ twitter.com##[aria-label="タイムライン: Carousel"]
 
 ! === 細かいやつ ここから ===
 ! single timeline上のおすすめトピックを非表示
-twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-1dbjc4n
+!twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-dbjc4n > .r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-1dbjc4n
 
 ! single timeline上の「さらに表示」と「その他のトピック」を非表示
-twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1yzf0co.r-ymttw5.r-1ny4l3l.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
+!twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1yzf0co.r-ymttw5.r-1ny4l3l.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
 
 ! single timeline上の「おすすめユーザー」の実際のユーザーを非表示
-twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
+!twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > div.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > div > div > .r-1ny4l3l.r-1adg3ll.r-qklmqi.r-j7yic.css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
 
 ! list の 上の方のとんでもなく巨大なバナーを非表示
 twitter.com##.r-1phboty.r-qklmqi.r-j7yic.css-1dbjc4n
