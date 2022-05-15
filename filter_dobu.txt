@@ -30,7 +30,7 @@ twitter.com##div[class="css-1dbjc4n r-1ila09b r-qklmqi r-1adg3ll r-1ny4l3l"] > d
 twitter.com##aside[aria-label="おすすめユーザー"] > div[class*="css-1dbjc4n"][class*="r-rull8r"][class*="r-qklmqi"][class*="r-1wtj0ep"][class*="r-ymttw5"][class*="r-1f1sjgu"]:xpath(../..)
 ! Twitter いまどうしてる？ - What’s happening
 twitter.com##div[aria-label*="トレンド"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
-twitter.com##div[aria-label*="話題を検索"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
+!twitter.com##div[aria-label*="話題を検索"]:xpath(../..) > section[class*="css-1dbjc4n"]:xpath(../../..)
 ! おすすめトピック
 twitter.com##div[aria-label="タイムライン: "]:xpath(..) > h1[class="css-4rbku5 css-901oao r-4iw3lz r-1xk2f4g r-109y4c4 r-1udh08x r-wwvuq4 r-u8s1d r-92ng3h"]:xpath(../../..)
 ! Twitter -タイムライン-
@@ -247,7 +247,7 @@ youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a
 youtube.com##div.ytd-video-renderer:has(yt-formatted-string.ytd-channel-name > a[href*="%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E3%81%8A%E3%81%97%E3%82%8B%E3%81%93-%E3%81%8B%E3%82%8A"])
 
 ! 2020/5/26 https://twitter.com
-twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-t23y2h.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
+!twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-t23y2h.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
 ! 2020-09-30 http://gadgetr.seesaa.net
 gadgetr.seesaa.net###ia2a
 ! 2021-04-07 https://www.quora.com
